@@ -1,0 +1,107 @@
+    
+fprintf("\nAdam Hultman\nV00900702\nT01\n\n");
+
+%Question 101. 
+
+fprintf("E. 101.\n");
+fprintf("a) Invalid, can not start with number.\n");
+fprintf("b) Invalid, '$' is an invalid character.\n");
+fprintf("c) Valid\n");
+fprintf("d) Valid\n");
+fprintf("e) Invalid, can not begin with underscore.\n");
+
+% Question 106.
+
+fprintf("\n106.\n");
+
+% a)
+v = [0 1 2 3 4 5];
+i = 1;
+ fprintf("a)\n");
+while i < 7
+   
+    v(i) = 2*v(i) - 3;
+    i = i + 1;
+end
+disp(v);
+    
+% b)
+v = [0 1 2 3 4 5];
+i = 1;
+fprintf("b)\n");
+while i < 7
+    
+    v(i) = 1/(v(i)+1);
+    i = i + 1;
+end
+disp(v);
+
+% c)
+
+v = [0 1 2 3 4 5];
+i = 1;
+fprintf("c)\n");
+while i < 7
+    
+    v(i) = v(i)^5 - 3;
+    i = i + 1;
+end
+disp(v);
+
+% d)
+
+v = [0 1 2 3 4 5];
+i = 1;
+fprintf("d)\n");
+while i < 7
+    
+    v(i) = abs(v(i)) + v(i)^4;
+    i = i + 1;
+end
+disp(v);
+
+%Question 102.
+
+fprintf("\n102.\n");
+
+Celsius = [-50;-40;-30;-20;-10;0;10;20;30;40;50];
+Fahrenheit = [-50;-40;-30;-20;-10;0;10;20;30;40;50];
+Kelvin = [-50;-40;-30;-20;-10;0;10;20;30;40;50];
+
+i = 1;
+while i<12
+Fahrenheit(i) = (9/5)*Celsius(i) + 32;
+Kelvin(i) = Celsius(i) + 273.15;
+i= i+ 1;
+end
+T = table(Celsius, Fahrenheit, Kelvin);
+disp(T);
+
+% 107
+
+fprintf("\n107.\n");
+
+% a)
+fprintf("See next page(s) for function scripts\n")
+fprintf("a)\n");
+
+
+unitstep(5);
+
+% b)
+
+fprintf("\nb)\n");
+
+w = [0,-1,1,-2,2,-4,-5,6,7,8];
+unitstep2(w);
+
+% c)
+fprintf("\nc)\n");
+
+disp(w >= 0);
+
+
+
+
+
+
